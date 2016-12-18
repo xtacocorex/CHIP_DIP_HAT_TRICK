@@ -76,6 +76,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -96,6 +98,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="156" name="tAssmbl" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="bAssmbl" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -4379,91 +4383,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="1wire">
-<description>&lt;h1&gt;Dallas/Maxim 1-Wire/iButton devices&lt;/h1&gt;
-&lt;p&gt;Onewire is a simple, low-cost bus system working with hundreds of devices on an up to 300m long one-wire (plus GND) bus system. It is relative slow (~16kBaud) but electrically undemanding, too. The onewire is hotplug-capable, if the host software supports it. The bus can be controlled by a single &amp;mu;C port pin or by special host adapter chips, which are available for RS232, Parallel, I&lt;sup&gt;2&lt;/sup&gt;C, and USB to onewire conversion. They are available as ready-to-run host adapter devices, too.&lt;/p&gt;
-&lt;p&gt;The chips on the bus can be powered through the bus line, this is called "parasite power". All neccesary circuit and capacities for parasite power are on chip. Some chips need an additional power source to provide all features.&lt;/p&gt;
-&lt;p&gt;iButton is an application for onewire devices, using special packaged onewire devices as keys or for data storage. All onewire chips have a unique serial number for technical reasons, and together with the hot-plug capability this makes them useable as unique keys. In addition, many onewire chips have additional memory (EPROM, EEPROM, RAM) on the chip, which can be used to store cryptographic keys. iButtons come in various packages which are protected against corrosive agents and weather influences.&lt;/p&gt;
-&lt;p&gt;Get more info at &lt;tt&gt;http://www.maxim-ic.com/1-Wire.cfm&lt;/tt&gt;&lt;/p&gt;
-&lt;p&gt;Linux driver at &lt;tt&gt;http://owfs.sf.net&lt;/tt&gt;&lt;/p&gt;
-&lt;h3&gt;Copyright notice:&lt;/h3&gt;
-&lt;p&gt;The devices in this library are copyrighted by various authors &amp;mdash; permission to use, distribute and modify this library is given to you at the terms of the LGPL. Copyright holders are&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;&lt;/li&gt;
-&lt;li&gt;Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The authorship for each device is given in the device notes.&lt;/p&gt;</description>
-<packages>
-<package name="TSOC6">
-<description>&lt;b&gt;TSOC 6&lt;/b&gt;</description>
-<wire x1="-1.8542" y1="1.8034" x2="1.8542" y2="1.8034" width="0.254" layer="21"/>
-<wire x1="1.8542" y1="1.8034" x2="1.8542" y2="-1.8034" width="0.254" layer="21"/>
-<wire x1="1.8542" y1="-1.8034" x2="-1.8542" y2="-1.8034" width="0.254" layer="21"/>
-<wire x1="-1.8542" y1="-1.8034" x2="-1.8542" y2="1.8034" width="0.254" layer="21"/>
-<circle x="-1.143" y="-1.016" radius="0.254" width="0.1524" layer="21"/>
-<smd name="1" x="-1.27" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
-<smd name="2" x="0" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
-<smd name="3" x="1.27" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
-<smd name="4" x="1.27" y="1.6002" dx="0.4064" dy="1.2192" layer="1"/>
-<smd name="5" x="0" y="1.6002" dx="0.4064" dy="1.2192" layer="1"/>
-<smd name="6" x="-1.27" y="1.6002" dx="0.4064" dy="1.2192" layer="1"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.3716" y1="-2.0828" x2="-1.1684" y2="-1.0668" layer="51"/>
-<rectangle x1="-0.1016" y1="-2.0828" x2="0.1016" y2="-1.0668" layer="51"/>
-<rectangle x1="1.1684" y1="-2.0828" x2="1.3716" y2="-1.0668" layer="51"/>
-<rectangle x1="1.1684" y1="1.0668" x2="1.3716" y2="2.0828" layer="51"/>
-<rectangle x1="-0.1016" y1="1.0668" x2="0.1016" y2="2.0828" layer="51"/>
-<rectangle x1="-1.3716" y1="1.0668" x2="-1.1684" y2="2.0828" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="IC">
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<text x="5.715" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.715" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="-1.905" size="3.81" layer="94" ratio="15">IC</text>
-</symbol>
-<symbol name="1W">
-<text x="-8.89" y="1.905" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="1W" x="-5.08" y="0" visible="pad" length="middle" direction="pwr"/>
-</symbol>
-<symbol name="GND">
-<text x="-0.635" y="-0.635" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="1.905" y="-2.54" size="1.27" layer="95" font="vector" rot="MR270">GND</text>
-<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DS2432" prefix="IC">
-<description>&lt;h2&gt;1024-Bit Protected EEPROM with SHA-1 Engine&lt;/h2&gt;
-&lt;p&gt;This chip is a cryptographic device, providing 1024 Bits of EEPROM memory which may be written only after supplying the correct 64 bit secret. the secret cannot be read back from the device.&lt;/p&gt;
-&lt;p&gt;The other features of this chip are like the DS2431.&lt;/p&gt;
-&lt;p&gt;Please note the SHA-1 hash algorithm is considered weak if the data is not properly "padded". If you don't understand anything of this, don't use this chip.&lt;/p&gt;
-&lt;h3&gt;Author:&lt;/h3&gt;
-Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
-<gates>
-<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
-<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
-<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="P" package="TSOC6">
-<connects>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="_1W" pin="1W" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-samtec">
 <description>&lt;b&gt;Samtec Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -4945,6 +4864,84 @@ Source: Samtec SSW.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="JKW_CHIP">
+<packages>
+<package name="TSOC6">
+<description>&lt;b&gt;TSOC 6&lt;/b&gt;</description>
+<circle x="-2.413" y="-2.286" radius="0.254" width="0.1524" layer="21"/>
+<wire x1="1.8542" y1="1.8034" x2="1.8542" y2="-1.8034" width="0.254" layer="21"/>
+<wire x1="-1.8542" y1="-1.8034" x2="-1.8542" y2="1.8034" width="0.254" layer="21"/>
+<rectangle x1="-1.3716" y1="-2.0828" x2="-1.1684" y2="-1.0668" layer="51"/>
+<rectangle x1="-0.1016" y1="-2.0828" x2="0.1016" y2="-1.0668" layer="51"/>
+<rectangle x1="1.1684" y1="-2.0828" x2="1.3716" y2="-1.0668" layer="51"/>
+<rectangle x1="1.1684" y1="1.0668" x2="1.3716" y2="2.0828" layer="51"/>
+<rectangle x1="-0.1016" y1="1.0668" x2="0.1016" y2="2.0828" layer="51"/>
+<rectangle x1="-1.3716" y1="1.0668" x2="-1.1684" y2="2.0828" layer="51"/>
+<smd name="1" x="-1.27" y="-1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="2" x="0" y="-1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="3" x="1.27" y="-1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="4" x="1.27" y="1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="5" x="0" y="1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="6" x="-1.27" y="1.7002" dx="0.53" dy="1.53" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DS2431">
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="IO" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="NC@1" x="-5.08" y="7.62" length="point" rot="R90"/>
+<pin name="NC@2" x="-2.54" y="7.62" length="point" rot="R90"/>
+<pin name="NC@3" x="0" y="7.62" length="point" rot="R90"/>
+<pin name="NC@4" x="2.54" y="7.62" length="point" rot="R90"/>
+<text x="2.54" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DS2431" prefix="U">
+<description>&lt;h2&gt;1024-Bit EEPROM&lt;/h2&gt;
+&lt;p&gt;This chip provides a 4x256 Bit EEPROM, which can be programmed@5V. Write protection and OTP emulation are available, too.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2431" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IO" pad="2"/>
+<connect gate="G$1" pin="NC@1" pad="3"/>
+<connect gate="G$1" pin="NC@2" pad="4"/>
+<connect gate="G$1" pin="NC@3" pad="5"/>
+<connect gate="G$1" pin="NC@4" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ASSEMBLE" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="IC, 1024-Bit, 1-Wire EEPROM, TSOC6" constant="no"/>
+<attribute name="FOOTPRINT" value="TSOC6" constant="no"/>
+<attribute name="LINK" value="http://www.digikey.com/product-detail/en/DS2431P%2BT%26R/DS2431P%2BT%26RCT-ND/3647900" constant="no"/>
+<attribute name="MFG" value="DIGIKEY" constant="no"/>
+<attribute name="MFG_PN" value="DS2431P+T&amp;RCT-ND" constant="no"/>
+<attribute name="PART_TYPE" value="IC" constant="no"/>
+<attribute name="PRICE" value="0.98" constant="no"/>
+<attribute name="TOLLERANCE" value="" constant="no"/>
+<attribute name="VENDOR" value="MAXIM" constant="no"/>
+<attribute name="VENDOR_PART_NUMBER" value="DS2431P+T&amp;R" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4967,7 +4964,6 @@ Source: Samtec SSW.pdf</description>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="JP3" library="jumper" deviceset="JP2E" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="IC2" library="1wire" deviceset="DS2432" device="P"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -4975,6 +4971,7 @@ Source: Samtec SSW.pdf</description>
 <part name="3V3" library="wirepad" deviceset="WIREPAD" device="3,17/1,3"/>
 <part name="GND5" library="wirepad" deviceset="WIREPAD" device="3,17/1,3"/>
 <part name="X1" library="con-samtec" deviceset="SSW-120-02-S-D" device="" value="RPi"/>
+<part name="U1" library="JKW_CHIP" deviceset="DS2431" device="P"/>
 </parts>
 <sheets>
 <sheet>
@@ -5017,10 +5014,7 @@ Close right = input is 7 - 28V</text>
 <instance part="P+9" gate="VCC" x="-45.72" y="246.38"/>
 <instance part="JP3" gate="1" x="-38.1" y="254"/>
 <instance part="GND11" gate="1" x="-7.62" y="281.94"/>
-<instance part="IC2" gate="G$1" x="101.6" y="271.78"/>
-<instance part="IC2" gate="P" x="109.22" y="261.62" rot="R270"/>
-<instance part="IC2" gate="_1W" x="106.68" y="264.16"/>
-<instance part="GND14" gate="1" x="99.06" y="256.54"/>
+<instance part="GND14" gate="1" x="99.06" y="284.48" rot="R180"/>
 <instance part="R1" gate="G$1" x="86.36" y="271.78" rot="R90"/>
 <instance part="P+3" gate="VCC" x="86.36" y="281.94" smashed="yes">
 <attribute name="VALUE" x="91.44" y="279.4" size="1.778" layer="96" rot="R90"/>
@@ -5068,6 +5062,7 @@ Close right = input is 7 - 28V</text>
 <instance part="X1" gate="-38" x="144.78" y="160.02"/>
 <instance part="X1" gate="-39" x="124.46" y="157.48"/>
 <instance part="X1" gate="-40" x="144.78" y="157.48"/>
+<instance part="U1" gate="G$1" x="116.84" y="276.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5135,12 +5130,6 @@ Close right = input is 7 - 28V</text>
 <wire x1="7.62" y1="251.46" x2="7.62" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="P" pin="GND"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="101.6" y1="261.62" x2="99.06" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="261.62" x2="99.06" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND5" gate="G$1" pin="P"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="-10.16" y1="289.56" x2="-7.62" y2="289.56" width="0.1524" layer="91"/>
@@ -5190,6 +5179,12 @@ Close right = input is 7 - 28V</text>
 <pinref part="SV3" gate="G$1" pin="16"/>
 <label x="63.5" y="167.64" size="1.778" layer="95"/>
 <wire x1="60.96" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="104.14" y1="279.4" x2="99.06" y2="279.4" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="99.06" y1="279.4" x2="99.06" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XIO-P5" class="0">
@@ -5741,13 +5736,14 @@ Close right = input is 7 - 28V</text>
 <label x="-43.18" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="_1W" pin="1W"/>
 <label x="91.44" y="264.16" size="1.778" layer="95"/>
-<wire x1="101.6" y1="264.16" x2="86.36" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="264.16" x2="86.36" y2="264.16" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="264.16" x2="81.28" y2="264.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="266.7" x2="86.36" y2="264.16" width="0.1524" layer="91"/>
 <junction x="86.36" y="264.16"/>
+<pinref part="U1" gate="G$1" pin="IO"/>
+<wire x1="119.38" y1="266.7" x2="119.38" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
